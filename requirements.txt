@@ -1,0 +1,12 @@
+# CPU-only experiment (AC-NR / DC oracles, detectors, figures)
+numpy
+scipy
+matplotlib
+pandas
+pyarrow
+pyyaml
+# GENCO oracle, fine-tuning, datakit scenarios (GPU): see "Reproduce" in README.md
+#   torch>=2.7.1,<2.9 (CUDA build matching your driver), torch-geometric
+#   gridfm-graphkit  (branch genco-paper-repro, installed from source)
+#   gridfm-datakit   (+ `gridfm_datakit setup_pm` once for Julia/PowerModels/Ipopt)
+#   huggingface_hub

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch-scatter"
+version = "2.1.2+purtorch"
+description = "Pure-PyTorch stand-in for the three torch_scatter ops gridfm-graphkit uses (no compiled extension; aarch64/Blackwell safe)"
+dependencies = ["torch"]
+
+[tool.setuptools]
+packages = ["torch_scatter"]
