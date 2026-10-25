@@ -49,6 +49,8 @@ python scripts/headline_numbers.py --check          # verifies every number in t
 Datakit needs Julia/PowerModels (`gridfm_datakit setup_pm` once) and more memory than a typical
 shared login node allows.
 
+**Fine-tuned checkpoints** used in the write-up: https://huggingface.co/hasethi/genco-fdia-finetuned (`mixed/` and `case_file_only/`, same file layout as the base checkpoint; point `GENCO_CKPT_DIR` at one of them, or pass `--genco_ckpt <folder> --tag _ft` to `run_experiment.py`).
+
 ## Layout
 - `src/grid.py`: IEEE 118 parser, Ybus, AC Newton-Raphson, DC power flow.
 - `src/attacks.py`: load trajectories, the `k`-parameterised stealthy attacker, measurement noise.
