@@ -1,4 +1,4 @@
-**Participant:** Harpreet Sethi  
+**Participant:** Harpreet Sethi (NVIDIA)  
 **Contact:** hasethi@nvidia.com
 
 ## Summary
