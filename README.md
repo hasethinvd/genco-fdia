@@ -55,9 +55,10 @@ shared login node allows.
 On 25 October 2026 a fresh clone of this repository, a new virtual environment from `requirements.txt`
 and the CPU commands above regenerated `results_nr_ramp1.json`, `results_nr_ramp5.json`,
 `results_nr_ramp1_datakit.json` and `results_nr_ramp5_datakit.json` identical to the committed files
-(`scripts/compare_results.py`, tolerance 0). The GENCO rows can be re-derived with
-`scripts/reproduce_genco.sh` (GPU; downloads the base and the fine-tuned checkpoints and compares
-with the committed results; GPU inference may differ in the last bits, so it uses a 0.02 / 2% tolerance).
+(`scripts/compare_results.py`, tolerance 0). The same day, `scripts/reproduce_genco.sh` on a fresh clone with the base checkpoint and the
+fine-tuned `mixed` checkpoint downloaded from the Hub regenerated `results_genco_ramp1_datakit.json` and
+`results_genco_ft_mix_ramp1_datakit.json` on one GB200: every detection rate identical to three decimals,
+clean thresholds within 2e-5 relative (GPU last-bit differences; the script allows 0.02 / 2%).
 
 ## Layout
 - `src/grid.py`: IEEE 118 parser, Ybus, AC Newton-Raphson, DC power flow.
