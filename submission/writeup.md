@@ -1,5 +1,6 @@
 **Participant:** Harpreet Sethi (NVIDIA)  
-**Contact:** hasethi@nvidia.com
+**Contact:** hasethi@nvidia.com  
+**Use of AI:** Code and text were developed with the assistance of Claude Code (Anthropic) and reviewed by the author; the experiments were run by the author.
 
 ## Summary
 
@@ -112,4 +113,4 @@ Measure the screening pipeline directly (the fraction of clean scans referred to
 
 Code: https://github.com/hasethinvd/genco-fdia (Apache-2.0). Results JSON and figures: https://github.com/hasethinvd/genco-fdia/tree/main/results.
 
-**Tooling and AI assistance.** The analysis code, experiments and this write-up were developed with Claude Code (Anthropic). The experiments were run by the author on a GPU cluster, and every number in the tables is checked against the results files by `scripts/headline_numbers.py`.
+**Reproducibility and credits.** Every number in the tables is checked against the results files by `scripts/headline_numbers.py --check`. The GENCO model, its checkpoints and the OpenGridFM toolkits (`gridfm-graphkit`, `gridfm-datakit`) are the work of the GridFM team (arXiv:2608.09921); the IEEE 118 case data are from MATPOWER and PGLib.
