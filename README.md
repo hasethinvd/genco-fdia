@@ -51,6 +51,14 @@ shared login node allows.
 
 **Fine-tuned checkpoints** used in the write-up: https://huggingface.co/hasethi/genco-fdia-finetuned (`mixed/` and `case_file_only/`, same file layout as the base checkpoint; point `GENCO_CKPT_DIR` at one of them, or pass `--genco_ckpt <folder> --tag _ft` to `run_experiment.py`).
 
+## Reproduction check
+On 25 October 2026 a fresh clone of this repository, a new virtual environment from `requirements.txt`
+and the CPU commands above regenerated `results_nr_ramp1.json`, `results_nr_ramp5.json`,
+`results_nr_ramp1_datakit.json` and `results_nr_ramp5_datakit.json` identical to the committed files
+(`scripts/compare_results.py`, tolerance 0). The GENCO rows can be re-derived with
+`scripts/reproduce_genco.sh` (GPU; downloads the base and the fine-tuned checkpoints and compares
+with the committed results; GPU inference may differ in the last bits, so it uses a 0.02 / 2% tolerance).
+
 ## Layout
 - `src/grid.py`: IEEE 118 parser, Ybus, AC Newton-Raphson, DC power flow.
 - `src/attacks.py`: load trajectories, the `k`-parameterised stealthy attacker, measurement noise.
