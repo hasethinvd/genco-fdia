@@ -1,4 +1,4 @@
-**Participant:** Harpreet Sethi (NVIDIA)  
+**Participant:** Harpreet Sethi (NVIDIA), participating individually as a student at Colorado School of Mines; this entry does not represent the university.  
 **Contact:** hasethi@nvidia.com  
 **Use of AI:** Code and text were developed with the assistance of Claude Code (Anthropic) and reviewed by the author; the experiments were run by the author.
 
